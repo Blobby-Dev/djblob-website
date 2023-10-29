@@ -1,0 +1,25 @@
+:root {
+	/* 
+	* this is primary color, applied on:
+	* background, underline
+	 */
+	--primary: #787373;
+	--primary-disabled: #6f6f6f;
+	/*
+	* this is secondary color, applied on:
+	* text, border
+	*/
+	--secondary: rgb(0, 0, 0);
+	--secondary-disabled: #fffff;
+	/*
+	* this is third color, applied on:
+	* button, 
+	*/
+	--third: #e9ec5f;
+	--third-disabled: #ababab;
+	/*
+	* other colors, used on random object.
+	*/
+	--o1: #d1cd45;
+	--o1-disabled: #858584;
+}

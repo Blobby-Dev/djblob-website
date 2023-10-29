@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>DJ Blob - A Discord Bot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- you can change the website icon by change the href link -->
+  <link rel="icon" type="image/png" href="./img/logo.png">
+
+
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="./css/coloring.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="./css/txtformatting.css">
+  <link rel="stylesheet" type="text/css" href="./css/shadow.css">
+  <link rel="stylesheet" type="text/css" href="./css/loading.css">
+
+ 
+  
+  <!-- css end -->
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="on">
+  <div class="loading" id="loading-box">
+    <div class="loading-item"><div class="loading-progress"></div></div>
+  </div>
+  <main class="main">
+    <!-- navbar -->
+    <div class="navbar">
+      <div class="container">
+        <div class="navbar-nav">
+          <div class="navbar-brand">
+            <!-- You can change it with Image if you want. -->
+            <span class="navbar-brand-txt"><a class="txt-bold type-1" href="/">DJ Blob</a></span>
+          </div>
+
+          <span class="navbar-toggler" id="toggler"><i onclick="toggleNavbar(this)" class="fas fa-bars"></i></span>
+
+          <div class="navs" id="navs">
+            <!-- You can change the href value and the text value -->
+            <a target="_blank">
+            <div class="navs-item notbtn"><a href="https://blobby.live" target="_blank" class="txt-uppercase">Developer</a></div>
+          
+            <div class="navs-item notbtn"><a href="https://discord.gg/RWSEj6JrjJ" target="_blank" class="txt-uppercase">Support</a></div>
+            <div class="navs-item notbtn"><a href="https://discord.com/api/oauth2/authorize?client_id=786209866946838528&permissions=2184235104&scope=bot" target="_blank" class="txt-uppercase">Invite</a></div>
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- navbar end -->		
+    <!-- jumbotron -->
+    <div class="jumbotron">
+      <div class="container">
+        <div class="jumbotron-items">
+          <div class="jumbotron-item">
+            <span class="jumbotron-t">Why DJ Blob?</span>
+            <p class="jumbotron-d">A fun, simple, and free music bot that allows you to listen to music with your Discord buddies!</p>
+            <div class="jumbotron-buttons">
+              <button class="btn blue" onclick="location.href='https://discord.com/api/oauth2/authorize?client_id=786209866946838528&permissions=2184235104&scope=bot'">Invite</button>
+              <button class="btn" onclick="location.href='#features'">Commands</button>
+              
+            </div>
+          </div>
+          <div class="jumbotron-item">
+            <img src="./img/img.png" alt="image"> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jumbotron end -->
+    
+  </main>
+
+  <!-- features -->
+  
+  <div class="features-box">
+    <h1 class="features-t" id="features">Commands</h1>
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 2%;
+      }
+      
+      td, th {
+        border: 1px solid #000000;
+        text-align: left;
+        padding: 8px;
+      }
+      
+      </style>
+
+<table>
+  
+  <tr>
+    <th>Command Name</th>
+    <th>Description</th>
+    <th>Usage</th>
+  </tr>
+  <tr>
+    <td>Play</td>
+    <td>Plays the desired music</td>
+    <td>/play "Music"</td>
+  </tr>
+  <tr>
+    <td>Pause</td>
+    <td>Pauses the music</td>
+    <td>/pause</td>
+  </tr>
+  <tr>
+    <td>Loop</td>
+    <td>Plays the music on repeat</td>
+    <td>/loop</td>
+  </tr>
+  <tr>
+    <td>Leave</td>
+    <td>Leaves the voice channel</td>
+    <td>/leave</td>
+  </tr>
+  <tr>
+    <td>Bass</td>
+    <td>Bass boosts the currently playing music</td>
+    <td>/bassboost</td>
+  </tr>
+  <tr>
+    <td>Slowed</td>
+    <td>Slows down the currently playing music</td>
+    <td>/slowed</td>
+  </tr>
+  <tr>
+    <td>Speed</td>
+    <td>Speeds up the currently playing music</td>
+    <td>/speed</td>
+  </tr>
+  <tr>
+    <td>Now Playing</td>
+    <td>Shows the details of the music that's currently playing</td>
+    <td>/nowplaying</td>
+  </tr>
+  <tr>
+    <td>Skip</td>
+    <td>Skips the currently playing music to the queued up music</td>
+    <td>/skip</td>
+  </tr>
+  <tr>
+    <td>Now Playing</td>
+    <td>Shows the details of the music that's currently playing</td>
+    <td>/nowplaying</td>
+  </tr>
+  <tr>
+    <td>Seek</td>
+    <td>Seeks the music that you wanna play</td>
+    <td>/seek "enter the queue number"</td>
+  </tr>
+  <tr>
+    <td>Back</td>
+    <td>Plays the previously played music</td>
+    <td>/back</td>
+  </tr>
+  <tr>
+    <td>Volume</td>
+    <td>Sets the volume to your desired level</td>
+    <td>/volume "enter the value"</td>
+  </tr>
+</table>
+    
+  </div>
+
+
+  <!-- features end -->
+
+  <!-- services -->
+ 
+  <!-- services end -->
+
+  <!-- footer -->
+  
+  <!-- footer end -->
+
+  
+  <script type="text/javascript" src="./js/script.js"></script>
+  <script type="text/javascript" src="./js/cursor.js"></script>
+</body>
+</html>
