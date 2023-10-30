@@ -190,13 +190,13 @@ body.on {
 /* jumbotron end */
 
 /* features */
-.features-box .features-t {
+.commands-box .commands-t {
 	font-size: 30px;
 	text-align: center;
 	margin-bottom: 25px;
 }
 
-.features-box .features-t::after {
+.commands-box .commands-t::after {
 	content: "";
 	display: block;
 	border-bottom: 3px solid var(--third);
@@ -207,7 +207,7 @@ body.on {
 	min-width: 70px;
 }
 
-.features {
+.commands {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -215,35 +215,35 @@ body.on {
 }
 
 
-.features .feature {
+.commands .commands {
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
 	margin: 30px 0;
 }
 
-.features .feature:nth-child(2) {
+.commands .commands:nth-child(2) {
 	flex-direction: row-reverse;
 }
 
-.feature .feature-img {
+.commands .commands-img {
 	width: 100%;
 	max-width: 400px;
 	margin: 0 auto;
 }
 
-.feature .feature-info {
+.commands .commands-info {
 	max-width: 400px;
 	border-radius: 5px;
 	padding: 10px;
 	margin: 10px auto;
 }
 
-.feature .feature-info .feature-info-d {
+.commands .commands-info .commands-info-d {
 	color: var(--secondary-disabled)
 }
 
-.feature .feature-info .feature-info-t {
+.commands .commands-info .commands-info-t {
 	font-size: 30px;
 	font-weight: bold;
 }
@@ -386,20 +386,20 @@ body.on {
 	/* navbar mobile version end */
 
 	/* features mobile version */
-	.features-box .features-t {
+	.commands-box .commands-t {
 		font-size: 20px;
 		text-align: center;
 	}
 
-	.feature-info .feature-info-t, .feature-info .feature-info-d {
+	.commands-info .commands-info-t, .commands-info .commands-info-d {
 		text-align: center;
 	}
 
-	.features .feature {
+	.commands .commands {
 		flex-direction: column;
 	}
 
-	.features .feature:nth-child(2) {
+	.commands .commands:nth-child(2) {
 		flex-direction: column;
 	}
 	/* features mobile version end */
